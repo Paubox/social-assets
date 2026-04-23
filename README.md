@@ -6,15 +6,24 @@ Public host for social graphics used in Paubox campaigns. Image URLs from this r
 
 Once an image URL is in a published social post or a scheduled upload, changing or removing the file breaks the post silently. Add new files; don't edit old ones.
 
-## Naming convention
+## Folder + naming convention
 
-`RPT.<YYYYMM>.<ReportShortName>-<asset-type>-<slug>[-x].png`
+Each report gets its own folder. Folder name matches the file prefix.
 
-- `RPT.202602.EmailSecurity-stat-85-breach.png` — stat graphic (LinkedIn/square)
-- `RPT.202602.EmailSecurity-article-s1-dmarc-x.png` — article graphic (X/Twitter crop)
+```
+RPT.<YYYYMM>.<ReportShortName>/
+  RPT.<YYYYMM>.<ReportShortName>-<asset-type>-<slug>[-x].png
+```
+
+Example:
+```
+RPT.202602.EmailSecurity/
+  RPT.202602.EmailSecurity-stat-85-breach.png        # stat graphic (LinkedIn/square)
+  RPT.202602.EmailSecurity-article-s1-dmarc-x.png    # article graphic (X/Twitter crop)
+```
 
 ## Raw URL format
 
 ```
-https://raw.githubusercontent.com/Paubox/social-assets/master/<filename>
+https://raw.githubusercontent.com/Paubox/social-assets/master/<folder>/<filename>
 ```
