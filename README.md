@@ -16,5 +16,5 @@ Once an image URL is in a published social post or a scheduled upload, changing 
 ## Raw URL format
 
 ```
-https://raw.githubusercontent.com/Paubox/social-assets/main/<filename>
+https://raw.githubusercontent.com/Paubox/social-assets/master/<filename>
 ```
