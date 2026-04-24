@@ -1,29 +1,13 @@
-# Paubox social-assets
+# Paubox/social-assets (archived)
 
-Public host for social graphics used in Paubox campaigns. Image URLs from this repo are referenced in HubSpot bulk social uploads, LinkedIn/X posts, and other places that need a reachable public image URL.
+**This repo has been replaced by [Paubox/social](https://github.com/Paubox/social).**
 
-## Do not rename or delete files after they're referenced
+All content moved to `Paubox/social/social-assets/` with the same per-report folder structure. URLs have been migrated across all downstream references (HubSpot bulk social, content calendars, skills).
 
-Once an image URL is in a published social post or a scheduled upload, changing or removing the file breaks the post silently. Add new files; don't edit old ones.
-
-## Folder + naming convention
-
-Each report gets its own folder. Folder name matches the file prefix.
+New URL pattern:
 
 ```
-RPT.<YYYYMM>.<ReportShortName>/
-  RPT.<YYYYMM>.<ReportShortName>-<asset-type>-<slug>[-x].png
+https://raw.githubusercontent.com/Paubox/social/main/social-assets/<report-folder>/<filename>
 ```
 
-Example:
-```
-RPT.202602.EmailSecurity/
-  RPT.202602.EmailSecurity-stat-85-breach.png        # stat graphic (LinkedIn/square)
-  RPT.202602.EmailSecurity-article-s1-dmarc-x.png    # article graphic (X/Twitter crop)
-```
-
-## Raw URL format
-
-```
-https://raw.githubusercontent.com/Paubox/social-assets/master/<folder>/<filename>
-```
+Old URLs from this archived repo may continue to resolve (archived repos stay readable), but all new content goes into the new repo.
